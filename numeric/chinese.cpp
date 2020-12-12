@@ -18,7 +18,7 @@ template<typename T> T chinese(T a, T m, T b, T n) {
 	return ret;
 }
 
-template<typnemae T> T chinese_common(T a, T m, T b, T n) {
+template<typename T> T chinese_common(T a, T m, T b, T n) {
 	T d = gcd(m, n);
 	if (((b -= a) %= n) < 0) b += n;
 	if (b % d) return -1; // No solution
